@@ -19,9 +19,24 @@ p{
 a{
     text-decoration: none;
 }
+button{
+    cursor: pointer;
+}
 
 section{
     background-color: rgb(245,245,245);
+}
+
+.click{
+    transition: all 300ms ease;
+}
+
+.click:hover{
+    transform: scale(1.1);
+}
+
+.click:active{
+    transform: scale(0.8);
 }
 
 .title{
@@ -53,6 +68,7 @@ LANDING PAGE
     transform: translate(-50%, -50%);
     width: 100%;
     max-width: 1000px;
+    padding: 0 30px;
 }
 
 .header__para{
@@ -63,14 +79,83 @@ LANDING PAGE
 
 .social__list{
     margin-top: 16px;
+    display: flex;
 }
 
 .social__link{
     background-color: blue;
+    color: white;
     padding: 6px;
     width: 32px;
+    height: 32px;
+    font-size: 14px;
+    margin-right: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
 }
 
+.social__icon{
+    width: 16px;
+    height: 16px;
+}
+
+.mail__btn{
+    width: 72px;
+    height: 72px;
+    font-size: 32px;
+    border-radius: 50%;
+    border: none;
+    background-color: #242424;
+    position: absolute;
+    bottom: 32px;
+    right: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mail__icon{
+    width: 40px;
+    height: 40px;
+}
+
+.scroll{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.scroll__icon{
+    width: 20px;
+    height: 30px;
+    border: 2px solid #242424;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scroll__icon:after{
+    content: "";
+    width: 4px;
+    height: 6px;
+    background-color: #242424;
+    border-radius: 2px;
+    animation: scroll 1000ms infinite alternate-reverse;
+}
+
+@keyframes scroll{
+    0%{
+        transform: translateY(3px);
+    }
+
+    100%{
+        transform: translateY(-3px);
+    }
+}
 /* 
 
 NAVIGATION 
@@ -84,8 +169,8 @@ nav{
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 20px;
     height: 100px;
-
 }
 
 #personal-logo{
@@ -106,4 +191,9 @@ nav{
     font-size: 16px;
     color: #242424;
     font-weight: 700;
+}
+
+.nav__icon{
+    width: 16px;
+    height: 16px;
 }
