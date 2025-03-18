@@ -263,6 +263,24 @@ MODAL
 
 .modal__about{
     background-color: rgb(245,245,245);
+    padding: 40px 72px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.modal__languages{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.modal__language{
+    width: 25%;
+    padding: 16px;
+}
+
+.modal__language--img{
+    width: 100%;
 }
 
 .modal__contact{
