@@ -86,7 +86,7 @@
                 </div>
             </div>
         </header>
-        <button class="mail__btn click">
+        <button class="mail__btn click" onclick="toggleModal()">
             <img src="./assets/envelope-solid.svg" class="mail__icon">
         </button>
         <a href="projects" class="scroll">
@@ -130,6 +130,9 @@
                 </div>
             </div>
             <div class="modal__half modal__contact">
+                <!--<button onclick="toggleModal()">-->
+                    <img src="./assets/x-solid.svg" class="modal__exit click" onclick="toggleModal()">
+                <!--</button>-->
                 <h3 class="modal__title modal__title--contact">
                     Let's have a chat!
                 </h3>
@@ -160,7 +163,6 @@
                     Thanks for the message! Looking forward to speaking to you soon.
                 </div>
             </div>
-            <img src="./assets/x-solid.svg" class="modal__exit click">
         </div>
     </section>
     <section id="projects">
