@@ -2,6 +2,20 @@
 //service: service_cqunt7c
 //publicKey: NQkhDt6mClnYfrttP
 
+let isModalOpen = false;
+let contrastToggle = false;
+
+function toggleContrast(){
+    contrastToggle = !contrastToggle;
+    if(contrastToggle){
+        document.body.classList += " dark-theme";
+    }
+    else{
+        document.body.classList.remove("dark-theme");
+    }
+    console.log('it worked 1')
+}
+
 function contact(event){
     event.preventDefault();
     const loading = document.querySelector('.modal__overlay--loading');
@@ -30,7 +44,6 @@ function contact(event){
    }, 500);
 }
 
-let isModalOpen = false;
 function toggleModal(){
     if(isModalOpen){
         isModalOpen = false;
